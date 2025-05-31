@@ -1,0 +1,29 @@
+[
+  {
+    "id": "huruf_a",
+    "type": "huruf",
+    "text_content": "A",
+    "pronunciation_text": "A",
+    "image_path": "assets/huruf_a.png",
+    "quiz_prompt": "Ucapkan huruf ini, 'A'!",
+    "expected_responses": ["a", "ah", "ha"]
+  },
+  {
+    "id": "angka_1",
+    "type": "angka",
+    "text_content": "1",
+    "pronunciation_text": "Satu",
+    "image_path": "assets/angka_1.png",
+    "quiz_prompt": "Ucapkan angka ini, 'Satu'!",
+    "expected_responses": ["satu", "sa tu"]
+  },
+  {
+    "id": "huruf_b",
+    "type": "huruf",
+    "text_content": "B",
+    "pronunciation_text": "Be",
+    "image_path": "assets/huruf_b.png",
+    "quiz_prompt": "Bisakah kamu ucapkan huruf 'B'?",
+    "expected_responses": ["b", "be", "beh"]
+  }
+]

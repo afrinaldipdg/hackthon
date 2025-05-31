@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksara Nusantara AI Tutor</title>
+    <script>
+  // public/index.html (di dalam <head>)
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/js/service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker registered: ', registration);
+        })
+        .catch(registrationError => {
+          console.log('ServiceWorker registration failed: ', registrationError);
+        });
+    });
+  }
+</script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <header>
+        <h1>Aksara Nusantara AI Tutor</h1>
+        <p>Belajar membaca dan menulis bersama AI, kapan saja, di mana saja.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Selamat Datang!</h2>
+            <p>Tekan tombol di bawah untuk mulai belajar dengan suara Anda.</p>
+            <button id="startButton">Mulai Belajar</button>
+            <div id="statusMessage"></div>
+            <div id="responseArea"></div>
+        </section>
+
+        <section class="features">
+            <h3>Fitur Unggulan (MVP)</h3>
+            <ul>
+                <li>Pembelajaran berbasis suara dua arah.</li>
+                <li>Materi pelajaran dasar (misal: pengenalan huruf/angka).</li>
+                <li>Dapat digunakan tanpa internet setelah unduhan awal.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tim AI Aksara Nusantara. Didukung oleh Glitch.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
